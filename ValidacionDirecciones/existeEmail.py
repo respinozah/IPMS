@@ -11,7 +11,7 @@ def existeEmail(email):
         server.set_debuglevel(0)
         server.connect(mx_record)
         server.helo('localhost')  # Nombre de la máquina local
-        server.mail('margaretgarner959@yahoo.com')  # Dirección de correo del remitente
+        server.mail('user@mail.com')  # Dirección de correo del remitente
         code, message = server.rcpt(email)
         server.quit()
         if code == 250:
